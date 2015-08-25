@@ -11,13 +11,14 @@
 
 <body>
 
-		<div class="container">
+<!-- Container Wrapper -->
+	<div class="container">
 
-			@yield('content')
+		@yield('content')
 
-		</div>
+	</div> <!-- end of main Container -->
 
 
-</body>
+</body> <!-- dend of Body -->
 
-</html>	
+</html>	<!-- End of base HTML -->
