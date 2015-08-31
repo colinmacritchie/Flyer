@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="jumbotron">
+<div id="jumbo" class="jumbotron">
        <h1>Flyer</h1>
 
         <p>
@@ -15,5 +15,4 @@
         <a href="/flyers/create" class="btn btn-primary">Create a Flyer</a>
 
       </div>
-
 @stop
