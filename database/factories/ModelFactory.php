@@ -20,7 +20,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(App\Flyer::class, function (Faker\Generator $faker) {
     return [
        
         'city'            => $faker->city,
@@ -31,21 +31,21 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
         'country'         => $faker->country,
 
-        'price'           => $faker-numberBetween(10000, 50000000),
+        'price'           => $faker->numberBetween(10000, 50000000),
 
-        'description'     => $faker->paragraphs(3)
+        'description'     => $faker->paragraphs(3),
 
-        'make'            => $faker->make,
+        'make'            => $faker->text($maxNbChars = 50),
 
-        'model'           => $faker->model,
+        'model'           => $faker->text($maxNbChars = 50),
 
-        'color'           => $faker->color,
+        'color'           => $faker->text($maxNbChars = 50),
 
-        'year'            => $faker->year,
+        'year'            => $faker->year($max = 'now'),
 
-        'miles'           => $faker->miles,
+        'miles'           => $faker->numberBetween(0, 10000000),
 
-        'condition'       => $faker->condition,
+        'condition'       => $faker->text($maxNbChars = 50),
 
     ];
 });
